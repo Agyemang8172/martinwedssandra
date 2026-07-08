@@ -1,6 +1,7 @@
 import Countdown from './Countdown'
 import couplephoto from '../assets/images/couplephoto.jpeg'
 import { motion } from 'framer-motion'
+import { MapPin } from 'lucide-react'
 
 const container = {
   hidden: {},
@@ -99,7 +100,9 @@ const InvitationScreen = () => {
         <motion.div variants={item} className="w-full bg-white rounded-3xl shadow-lg p-8 mb-12">
           <h2 className="font-serif text-4xl text-brand-green mb-4">Wedding Venue</h2>
           <p className="mb-6">Assemblies of God, JCCC, Broadcasting Last Stop</p>
-          <div className="text-brand-green-light text-4xl mb-6">📍</div>
+         <div className="flex justify-center text-brand-green-light mb-6">
+            <MapPin size={40} />
+          </div>
           
              <a href="https://www.google.com/maps/search/?api=1&query=Assemblies+of+God+JCCC+Broadcasting+Last+Stop+Accra"
             target="_blank"

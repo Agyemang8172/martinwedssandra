@@ -2,6 +2,7 @@ import { useState, useRef } from 'react'
 import CoverScreen from './Components/CoverScreen'
 import InvitationScreen from './Components/InvitationScreen'
 import song from './assets/audio/song.mp3'
+import { Volume2, VolumeX } from 'lucide-react'
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -29,7 +30,7 @@ const App = () => {
           aria-label={muted ? "Unmute music" : "Mute music"}
           className="fixed top-5 right-5 z-50 h-12 w-12 rounded-full bg-white shadow-lg flex items-center justify-center text-brand-green-light text-xl"
         >
-          {muted ? "🔇" : "🔊"}
+         {muted ? <VolumeX size={22} /> : <Volume2 size={22} />}
         </button>
       )}
 
