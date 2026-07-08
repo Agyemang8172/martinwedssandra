@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cormorant-garamond/500.css";
+@import "@fontsource/cormorant-garamond/600.css";
+@import "@fontsource/jost/300.css";
+@import "@fontsource/jost/400.css";
+@import "@fontsource/jost/500.css";
+
+
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Jost", sans-serif;
+
+  --color-brand-green: #1a5f43;
+  --color-brand-green-light: #2e9d6e;
+  --color-brand-gold: #c9a24b;
+  --color-brand-text: #2f6b4f;
+  --color-brand-cream: #f2ede3;
+  --color-brand-mint: #dce9dc;
+}
