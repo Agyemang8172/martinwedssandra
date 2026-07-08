@@ -80,6 +80,13 @@ const InvitationScreen = () => {
         {/* COUNTDOWN */}
         <motion.div variants={item} className="w-full bg-white rounded-3xl shadow-lg p-8 mb-12">
           <Countdown />
+         <a href="https://www.google.com/maps/search/?api=1&query=Assemblies+of+God+JCCC+Broadcasting+Last+Stop+Accra"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block mt-6 border border-brand-green-light text-brand-green-light tracking-widest py-4 rounded-full font-semibold hover:bg-brand-green-light hover:text-white transition-colors"
+      >
+        SEE THE VENUE & GET DIRECTIONS →
+      </a>
         </motion.div>
 
         {/* ORDER OF CELEBRATION */}
@@ -89,7 +96,7 @@ const InvitationScreen = () => {
           <ul className="text-left">
             {program.map((prog, index) => (
               <li key={index} className="flex items-start gap-3 py-4 border-b border-brand-mint last:border-0">
-                <span className="mt-1.5 h-3 w-3 rounded-full bg-brand-green-light shrink-0" />
+                <span className="mt-1.5 h-3 w-3 rounded-full bg-brand-green-light/60  shrink-0" />
                 <span className="font-semibold text-brand-green">{prog}</span>
               </li>
             ))}
@@ -107,7 +114,7 @@ const InvitationScreen = () => {
              <a href="https://www.google.com/maps/search/?api=1&query=Assemblies+of+God+JCCC+Broadcasting+Last+Stop+Accra"
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full bg-brand-green-light text-white tracking-widest py-4 rounded-full font-semibold"
+           className="block w-full bg-brand-green-light hover:bg-brand-green transition-colors text-white tracking-widest py-4 rounded-full font-semibold"
           >
             GET DIRECTIONS →
           </a>
