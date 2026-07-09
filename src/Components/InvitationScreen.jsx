@@ -1,4 +1,4 @@
-import Countdown from './Countdown'
+import Countdown from './CountDown'
 import couplephoto from '../assets/images/couplephoto.jpeg'
 import { motion } from 'framer-motion'
 import { MapPin } from 'lucide-react'
