@@ -83,7 +83,7 @@ const InvitationScreen = () => {
          <a href="https://www.google.com/maps/search/?api=1&query=Assemblies+of+God+JCCC+Broadcasting+Last+Stop+Accra"
         target="_blank"
         rel="noopener noreferrer"
-        className="block mt-6 border border-brand-green-light text-brand-green-light tracking-widest py-4 rounded-full font-semibold hover:bg-brand-green-light hover:text-white transition-colors"
+        className="block mt-6 border border-brand-green-light text-brand-green-light tracking-widest py-4 rounded-full font-semibold hover:bg-brand-cream   transition-colors"
       >
         SEE THE VENUE & GET DIRECTIONS →
       </a>
@@ -93,12 +93,19 @@ const InvitationScreen = () => {
         <motion.div variants={item} className="w-full bg-white rounded-3xl shadow-lg p-8 mb-12">
           <h2 className="font-serif text-4xl text-brand-green mb-2">Order of Celebration</h2>
           <p className="mb-8">A gentle flow through our day.</p>
-          <ul className="text-left">
+         <ul className="text-left">
             {program.map((prog, index) => (
-              <li key={index} className="flex items-start gap-3 py-4 border-b border-brand-mint last:border-0">
-                <span className="mt-1.5 h-3 w-3 rounded-full bg-brand-green-light/60  shrink-0" />
+              <motion.li
+                key={index}
+                initial={{ opacity: 0, x: -40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.08, ease: 'easeOut' }}
+                className="flex items-start gap-3 py-4 border-b border-brand-mint last:border-0"
+              >
+                <span className="mt-1.5 h-3 w-3 rounded-full bg-brand-green-light/60 shrink-0" />
                 <span className="font-semibold text-brand-green">{prog}</span>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </motion.div>
