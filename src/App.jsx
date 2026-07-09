@@ -21,7 +21,19 @@ const App = () => {
   }
 
   return (
-    <div>
+    <>
+
+    <div className="hidden md:flex min-h-screen items-center justify-center bg-brand-cream text-center px-8">
+        <div>
+          <p className="font-serif text-3xl text-brand-green mb-4">This invitation is best viewed on a phone.</p>
+          <p className="text-brand-text">Please open it on your mobile device, or make your browser window narrower.</p>
+        </div>
+    </div>
+
+
+
+    
+    <div className="md:hidden">
       <audio ref={audioRef} src={song} loop />
 
       {isOpen && (
@@ -36,6 +48,7 @@ const App = () => {
 
       {isOpen ? <InvitationScreen /> : <CoverScreen onOpen={handleOpen} />}
     </div>
+    </>
   )
 }
 
