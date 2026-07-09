@@ -2,6 +2,7 @@ import Countdown from './Countdown'
 import couplephoto from '../assets/images/couplephoto.jpeg'
 import { motion } from 'framer-motion'
 import { MapPin } from 'lucide-react'
+import TypingVerse from './TypingVerse'
 
 const container = {
   hidden: {},
@@ -143,9 +144,7 @@ const InvitationScreen = () => {
           </div>
 
           <p className="tracking-widest text-sm mb-4">1 CORINTHIANS 13:13</p>
-          <p className="italic font-serif text-lg text-brand-text">
-            Three things will last forever, faith, hope, and love, and the greatest of these is love.
-          </p>
+          <TypingVerse text="Three things will last forever, faith, hope, and love, and the greatest of these is love." />
         </motion.div>
        </motion.div>
     
