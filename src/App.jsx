@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
-import CoverScreen from './Components/CoverScreen'
-import InvitationScreen from './Components/InvitationScreen'
+import CoverScreen from './components/CoverScreen'
+import InvitationScreen from './components/InvitationScreen'
 import song from './assets/audio/song.mp3'
 import { Volume2, VolumeX } from 'lucide-react'
 
