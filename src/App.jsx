@@ -11,6 +11,7 @@ const App = () => {
 
   const handleOpen = () => {
     setIsOpen(true)
+    audioRef.current.currentTime = 5
     audioRef.current.play().catch(() => {})
   }
 
